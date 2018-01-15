@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ashfaaq.android.fitnessappv2.SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="closeB"
+            android:background="@drawable/ic_close_black_24dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0"
+            android:background="@drawable/ic_person_black_24dp"
+            android:padding="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv"
+        android:layout_below="@+id/rv0">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/aguafina_script"
+            android:text="Ashfaaq Damree"
+            android:textAlignment="center"
+            android:textSize="50dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rv"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffc9b2"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/aladin"
+            android:onClick="editB"
+            android:paddingHorizontal="50dp"
+            android:text="EDIT PROFILE"
+            android:elevation="20dp"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_below="@+id/rv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            xmlns:p1="http://schemas.android.com/apk/res/android"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:scrollbarAlwaysDrawVerticalTrack="true"
+            p1:scrollbars="vertical"
+            p1:orientation="vertical"
+            p1:scrollbarStyle="insideOverlay">
+
+            <LinearLayout
+                p1:id="@+id/lv0"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:layout_centerHorizontal="true"
+                p1:orientation="horizontal"
+                p1:layout_below="@+id/rv1"
+                p1:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:layout_marginHorizontal="80dp">
+
+                    <TextView
+                        p1:id="@+id/age"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:fontFamily="@font/aladin"
+                        p1:text="AGE"
+                        p1:textSize="40dp"/>
+
+                    <TextView
+                        p1:id="@+id/ageNo"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_below="@+id/age"
+                        p1:layout_marginLeft="20dp"
+                        p1:layout_marginTop="20dp"
+                        p1:fontFamily="@font/aladin"
+                        p1:text="20"
+                        p1:textSize="30dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content">
+
+                    <TextView
+                        p1:id="@+id/height"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:fontFamily="@font/aladin"
+                        p1:text="HEIGHT"
+                        p1:textAlignment="center"
+                        p1:textSize="40dp"/>
+
+                    <TextView
+                        p1:id="@+id/heightNo"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_below="@+id/height"
+                        p1:layout_marginLeft="40dp"
+                        p1:layout_marginTop="20dp"
+                        p1:fontFamily="@font/aladin"
+                        p1:text="189m"
+                        p1:textAlignment="center"
+                        p1:textSize="30dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:layout_centerHorizontal="true"
+                p1:orientation="horizontal"
+                p1:layout_below="@+id/lv0"
+                p1:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:layout_marginHorizontal="80dp">
+
+                    <TextView
+                        p1:id="@+id/sex"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:fontFamily="@font/aladin"
+                        p1:text="SEX"
+                        p1:textSize="40dp"/>
+
+                    <TextView
+                        p1:id="@+id/sexA"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_below="@+id/sex"
+                        p1:layout_marginLeft="10dp"
+                        p1:layout_marginTop="20dp"
+                        p1:fontFamily="@font/aladin"
+                        p1:text="male"
+                        p1:textSize="30dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content">
+
+                    <TextView
+                        p1:id="@+id/weight"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:fontFamily="@font/aladin"
+                        p1:text="WEIGHT"
+                        p1:textAlignment="center"
+                        p1:textSize="40dp"/>
+
+                    <TextView
+                        p1:id="@+id/weightNo"
+                        p1:layout_width="wrap_content"
+                        p1:layout_height="wrap_content"
+                        p1:layout_below="@+id/weight"
+                        p1:layout_marginLeft="40dp"
+                        p1:layout_marginTop="20dp"
+                        p1:fontFamily="@font/aladin"
+                        p1:text="160kg"
+                        p1:textAlignment="center"
+                        p1:textSize="30dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

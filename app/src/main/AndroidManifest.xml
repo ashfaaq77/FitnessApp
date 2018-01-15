@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ashfaaq.android.fitnessappv2">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RunningActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AddActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <provider
+            android:name=".FitnessContentProvider"
+            android:authorities="com.ashfaaq.android.fitnessappv2"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:readPermission="true"
+            android:writePermission="true"/>
+
+        <activity
+            android:name=".LogActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AdvanceLogActivity"
+            android:screenOrientation="portrait">
+            >
+        </activity>
+        <activity
+            android:name=".AchievementActivity"
+            android:screenOrientation="portrait">
+            >
+        </activity>
+
+        <service android:name=".MyBoundService">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+
+                <action android:name="android.intent.action.ANSWER"/>
+
+            </intent-filter>
+
+        </service>
+
+        <activity android:name=".LatLngActivity">
+        </activity>
+    </application>
+
+</manifest>

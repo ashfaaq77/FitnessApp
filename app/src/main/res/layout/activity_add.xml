@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.ashfaaq.android.fitnessappv2.AddActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                xmlns:p1="http://schemas.android.com/apk/res/android"
+                p1:id="@+id/ly"
+                p1:layout_width="match_parent"
+                p1:layout_height="match_parent"
+                p1:background="#ffffff"
+                p1:scrollbarAlwaysDrawVerticalTrack="true"
+                p1:scrollbars="vertical"
+                p1:orientation="vertical"
+                p1:scrollbarStyle="insideOverlay">
+
+                <ImageView
+                    p1:id="@+id/ivadd"
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:background="@drawable/ic_person_black_24dp"
+                    p1:layout_marginTop="50dp"
+                    p1:padding="50dp"
+                    p1:layout_gravity="center_horizontal"
+                    p1:layout_weight="0"/>
+
+                <TextView
+                    p1:id="@+id/name"
+                    p1:layout_marginLeft="10dp"
+                    p1:layout_marginRight="10dp"
+                    p1:text="Name"
+                    p1:textColor="#000000"
+                    p1:layout_height="wrap_content"
+                    p1:layout_width="match_parent"
+                    p1:textSize="20dp"/>
+
+                <EditText
+                    p1:id="@+id/nameText"
+                    p1:text="Ashfaaq Damree"
+                    p1:layout_marginLeft="10dp"
+                    p1:layout_marginRight="10dp"
+                    p1:textSize="20sp"
+                    p1:layout_height="wrap_content"
+                    p1:layout_width="match_parent"/>
+
+
+                <TextView
+                    p1:id="@+id/age"
+                    p1:layout_below="@+id/nameText"
+                    p1:layout_marginTop="20dp"
+                    p1:layout_marginLeft="10dp"
+                    p1:layout_marginRight="10dp"
+                    p1:text="Age"
+                    p1:textSize="20dp"
+                    p1:layout_height="wrap_content"
+                    p1:layout_width="match_parent"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    p1:id="@+id/ageNo"
+                    p1:layout_marginLeft="10dp"
+                    p1:layout_marginRight="10dp"
+                    p1:layout_below="@+id/age"
+                    p1:textColor="#000000"
+                    p1:layout_height="wrap_content"
+                    p1:layout_width="match_parent"
+                    p1:text="20"/>
+
+                <TextView
+                    p1:id="@+id/height"
+                    p1:layout_below="@+id/ageNo"
+                    p1:layout_marginTop="20dp"
+                    p1:layout_marginLeft="10dp"
+                    p1:layout_marginRight="10dp"
+                    p1:text="Height (in cm)"
+                    p1:textSize="20dp"
+                    p1:layout_height="wrap_content"
+                    p1:layout_width="match_parent"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    p1:id="@+id/heightNo"
+                    p1:layout_below="@+id/height"
+                    p1:layout_marginLeft="10dp"
+                    p1:layout_marginRight="10dp"
+                    p1:textColor="#000000"
+                    p1:layout_height="wrap_content"
+                    p1:layout_width="match_parent"
+                    p1:text="180"/>
+
+                <TextView
+                    p1:id="@+id/weight"
+                    p1:layout_below="@+id/heightNo"
+                    p1:layout_marginTop="20dp"
+                    p1:layout_marginLeft="10dp"
+                    p1:layout_marginRight="10dp"
+                    p1:text="Weight (in kg)"
+                    p1:textSize="20dp"
+                    p1:layout_height="wrap_content"
+                    p1:layout_width="match_parent"
+                    p1:textColor="#000000"/>
+
+                <EditText
+                    p1:id="@+id/weightNo"
+                    p1:layout_below="@+id/weight"
+                    p1:layout_marginLeft="10dp"
+                    p1:layout_marginRight="10dp"
+                    p1:textColor="#000000"
+                    p1:layout_height="wrap_content"
+                    p1:layout_width="match_parent"
+                    p1:text="60"/>
+
+                <TextView
+                    p1:id="@+id/sex"
+                    p1:layout_below="@+id/weightNo"
+                    p1:layout_marginTop="20dp"
+                    p1:layout_marginLeft="10dp"
+                    p1:layout_marginRight="10dp"
+                    p1:text="Sex"
+                    p1:textSize="20dp"
+                    p1:layout_height="wrap_content"
+                    p1:layout_width="match_parent"
+                    p1:textColor="#000000"/>
+
+                <EditText
+                    p1:id="@+id/sexA"
+                    p1:layout_below="@+id/sex"
+                    p1:layout_marginLeft="10dp"
+                    p1:layout_marginRight="10dp"
+                    p1:textColor="#000000"
+                    p1:text="male"
+                    p1:layout_height="wrap_content"
+                    p1:layout_width="match_parent"/>
+
+                <Button
+                    p1:layout_width="wrap_content"
+                    p1:layout_height="wrap_content"
+                    p1:layout_gravity="center_horizontal"
+                    p1:text="SAVE"
+                    p1:background="#ffc9b2"
+                    p1:layout_below="@+id/sv"
+                    p1:onClick="saveB"
+                    p1:layout_marginBottom="10dp"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

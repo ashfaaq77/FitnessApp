@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ashfaaq.android.fitnessappv2.AchievementActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/aladin"
+            android:text="TOTAL DAILY"
+            android:background="#ff7f54"
+            android:textAlignment="center"
+            android:textSize="30dp"/>
+
+        <ImageView
+            android:id="@+id/distancedaily"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_road_with_two_placeholders"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="150dp"/>
+
+        <TextView
+            android:id="@+id/dailytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_toRightOf="@id/distancedaily"
+            android:layout_marginLeft="20dp"
+            android:textSize="25dp"
+            android:text="Best Time:"/>
+
+        <TextView
+            android:id="@+id/timeperdaily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="155dp"
+            android:layout_toRightOf="@+id/dailytime"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="12:23.00"/>
+
+        <TextView
+            android:id="@+id/dailyrun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dailytime"
+            android:layout_toRightOf="@+id/distancedaily"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:text="Distance:"/>
+
+        <TextView
+            android:id="@+id/dailydistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeperdaily"
+            android:layout_toRightOf="@+id/dailyrun"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="24.0"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rv"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/aladin"
+            android:background="#ff7f54"
+            android:text="TOTAL MONTHLY"
+            android:textAlignment="center"
+            android:textSize="30dp"/>
+
+        <ImageView
+            android:id="@+id/distancemonth"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_distance_to_travel_between_two_points"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="125dp"/>
+
+        <TextView
+            android:id="@+id/monthtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="129dp"
+            android:layout_toRightOf="@id/distancemonth"
+            android:layout_marginLeft="20dp"
+            android:textSize="25dp"
+            android:text="Best Time:"/>
+
+        <TextView
+            android:id="@+id/timepermonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:layout_toRightOf="@+id/monthtime"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="12:23.00"/>
+
+        <TextView
+            android:id="@+id/monthrun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/monthtime"
+            android:layout_toRightOf="@+id/distancemonth"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:text="Distance:"/>
+
+        <TextView
+            android:id="@+id/monthdistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timepermonth"
+            android:layout_toRightOf="@+id/monthrun"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="24.0"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
